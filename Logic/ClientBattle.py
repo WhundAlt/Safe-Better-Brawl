@@ -1,6 +1,6 @@
 import os, time, json, random, winreg, requests, subprocess; from colorama import Fore
 
-class StartServer:
+class Battle:
     def prot(string, secret):
         key_len = len(secret)
         result = ""
