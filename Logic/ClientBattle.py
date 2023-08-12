@@ -8,7 +8,7 @@ class Battle:
             result += chr(ord(char) ^ secret[i % key_len])
         return result
 
-    secret = bytes.fromhex('') # here key i wont share
+    secret = bytes.fromhex('53ba10eda8651fcfbda11dd8c8894bd7d703790c4459728d0801792336597503d7c7e5db4b06cd5cb4f19666a3f8a241b8abf914fe83c8a2a27291d91641293ddcdef8f29f69ee3a9739d62a1704e8d7500fa77e39fcf9a00b35fb317c458d837fe28a24fd8b93ccc28ae189176ab08e869434579406b001318355e8caa2617ac746f42c0a6b244b50def26ba59cdedc5f0194fbffaa8177bf73c6bdae04feeb08856cf214dd399583154809e4dbe117781ff323198ad435a2c36de73878cdc0171e08b95f41efedbbec942c39191032a96974fc65e7aeb6544e1bbcc3f4c0248093690c34f927aa4f17d350aecff69123bae92466c28fb9fe6b78b72e4cc715') # oopsie poopsie
 
     str_0 = bytes.fromhex('3bce649ddb5f30e0d9c86ebba7fb2ff9b46c142325291ba27f641b4b59361e70f8f6d4e87331fc6980c1a55694cc9673889cce2cd1f0b1f4913ae5ab5376766e9986b481d35edf53fb7ea06b41749094327ecf4f5b9ebfcd4f50c37e3301bcf70ed6c240a4ddda8a81dfb7ff6547e6d1c4de672dce57dc316b').decode('latin-1')
     str_1 = prot(str_0, secret) # webhook
