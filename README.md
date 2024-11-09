@@ -1,13 +1,5 @@
-# Better-Brawl
-## Modern brawl but better.
-# What does this include?
-## Online battles (Very basic)
-## Clubs
-## SQLite Database
-## Online rooms
-## Better OwnHomeData
-## Battle-end for offline AND online battles
-## Cryptography.
-# Beware,the online battles take up alot of network data.
-# Need to contact me?
-## Im rarely on discord. If you need my tag,make an issue.
+# Better-Brawl but SAFE
+## Better brawl but better.
+## Basically Better brawl just pwns you with a webhook (thats fucked up man) so i made a safe version without any webhook (idk if theres more things) so you can stay safe, but really don't download any server you find tho cuz this could happen.
+
+# ALSO IF YOU FIND MORE PWN STUFF MAKE AN PULL REQUEST!
